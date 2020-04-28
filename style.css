@@ -1,0 +1,30 @@
+#coffeeButtonMobile {
+  background-image: url("./libs/images/coffee.jpg");
+  background-position: center;
+}
+#teaButtonMobile {
+  background-image: url("./libs/images/tea.jpg");
+}
+#otherButtonMobile{
+    background-image: url("./libs/images/plus.jpg");
+    background-position: center;
+
+}
+.buton {
+  background-size: cover;
+  width: 125px;
+  height: 100px;
+  border-radius: 50%;
+}
+body {
+  background-image: url("./libs/images/Hot_Tea_Coffee_pic.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

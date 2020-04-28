@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cyangate Beverage Time</title>
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="mt-5" style="color: blue;">Beverage Timer</h1>
+                <p style="color: white;" class="lead">Whenever You Prepare a Beverage Click on Its Button</p>
+            </div>
+
+            <div class="col-md-4 col-12 text-center mb-2 outer">
+                <strong>
+                    <h3 style="color: orange;">Coffee</h3>
+                    <span id="preparedCoffees">
+
+                    </span>
+                </strong>
+                <span>
+                    <button class="buton" id="coffeeButtonMobile" onclick="addCoffee()"></button>
+                </span>
+                <hr class="d-block d-sm-none">
+            </div>
+
+            <div class="col-md-4 col-12 text-center mb-2 outer">
+                <strong>
+                    <h3 style="color: orange;">Tea</h3>
+                    <span id="preparedTeas">
+                    </span>
+                </strong>
+                <span>
+                    <button class="buton" id="teaButtonMobile" onclick="addTea()"></button>
+                </span>
+                <hr class="d-block d-sm-none">
+            </div>
+
+            <div class="col-md-4 col-12 text-center mb-2 outer">
+                <strong>
+                    <h3 style="color: orange;">Others</h3>
+                    <span id="preparedOther">
+
+                    </span>
+                </strong>
+                <span>
+                    <button class="buton" id="otherButtonMobile" data-toggle="modal" data-target="#myModal"></button>
+                </span>
+                <hr class="d-block d-sm-none">
+            </div>
+
+        </div>
+
+        <div id="notSupported"></div>
+
+        <script src="libs/jquery/jquery.slim.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./index.js"></script>
+
+</body>
+
+</html>
+
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Other Beverage</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="other">Beverage Name</label>
+                        <input type="text" class="form-control" id="other" placeholder="Name Of The Beverage You Prepared">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addOther()">Save</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
